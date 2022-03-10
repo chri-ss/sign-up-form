@@ -56,17 +56,28 @@ body {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 20rem;
     width: 65%;
     padding: 0 5rem 0 2rem;
     box-sizing: border-box;
+    background-color: $white;
 }
 
 fieldset {
     display: flex;
     position: relative;
-    flex-flow: column wrap;
-    background-color: $white;
+    flex-flow: row wrap;
     border: none;
+    gap: 1rem;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+input {
+    width: 20rem;
 }

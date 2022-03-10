@@ -61,12 +61,20 @@ body {
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 20rem;
   width: 65%;
   padding: 0 5rem 0 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
 }
 
 fieldset {
@@ -74,11 +82,25 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  border: none;
+  gap: 1rem;
+}
+
+fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  background-color: #fff;
-  border: none;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  width: 20rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,16 +20,34 @@
       </p>
       <p>You <em>know</em> you want to</p>
       <form>
+        <caption>
+          Let's do this
+        </caption>
         <fieldset>
-          <caption>
-            Let's do this
-          </caption>
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+          <div>
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first" />
+          </div>
+          <div>
+            <label for="last">Last Name</label>
+            <input type="text" name="last" id="last" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" />
+          </div>
+          <div>
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm" id="confirm" />
+          </div>
         </fieldset>
         <button type="submit">Create Account</button>
       </form>
