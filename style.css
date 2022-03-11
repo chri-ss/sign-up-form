@@ -24,7 +24,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10rem;
+  height: 8rem;
   width: 35%;
   background-color: #32382b;
   position: relative;
@@ -52,12 +52,13 @@ body {
 }
 
 .main-container p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 24px;
-  max-width: 50%;
+  max-width: 65%;
   position: relative;
   top: 5rem;
   left: 2rem;
+  font-weight: bold;
 }
 
 form {
@@ -69,12 +70,39 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 20rem;
+  top: 18rem;
   width: 65%;
   padding: 0 5rem 0 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #fff;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 24px;
+}
+
+form input {
+  width: 18rem;
+  font-size: 20px;
+  border: 1px solid #908d8d;
+  border-radius: 2px;
+}
+
+form button {
+  width: 20%;
+  background-color: #596D48;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 fieldset {
@@ -88,6 +116,10 @@ fieldset {
           flex-flow: row wrap;
   border: none;
   gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
 fieldset div {
@@ -98,9 +130,7 @@ fieldset div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-input {
+  font-size: 16px;
   width: 20rem;
 }
 /*# sourceMappingURL=style.css.map */
