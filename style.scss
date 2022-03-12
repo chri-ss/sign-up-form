@@ -16,6 +16,7 @@ body {
   background: url("./images/photo-1580570598977-4b2412d01bbc.jpeg") no-repeat
     center center fixed;
   background-size: cover;
+  flex-wrap: wrap;
 }
 
 .odin-container {
@@ -47,6 +48,7 @@ body {
   height: 100vh;
   width: 65%;
   background-color: $off-white;
+  position: relative;
 
   section {
     margin: 7rem 0 3rem 2rem;
@@ -68,6 +70,7 @@ form {
   box-sizing: border-box;
   padding: 0;
   font-family: $font-stack;
+  background-color: $off-white;
 
   h1 {
     width: 100%;
@@ -76,10 +79,12 @@ form {
   }
 
   input {
+    height: 100%;
     width: 18rem;
     font-size: 20px;
     border: 1px solid rgb(144, 141, 141);
     border-radius: 2px;
+    flex: 1;
   }
 
   button {
@@ -88,7 +93,7 @@ form {
     color: $white;
     border: none;
     padding: 1rem 2rem 1rem 2rem;
-    margin: 2rem 0 0  2rem;
+    margin: 2rem 0 0 2rem;
     border-radius: 5px;
     font-size: 18px;
   }
@@ -113,7 +118,7 @@ fieldset {
 }
 
 .account-already {
-    margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 2rem;
 }
 
 .input-container {
@@ -124,6 +129,6 @@ fieldset {
 }
 
 input:invalid {
-    border: 1px solid rgb(160, 0, 0);
-    background: rgb(250, 226, 226);
+  border: 1px solid rgb(160, 0, 0);
+  background: rgb(250, 226, 226);
 }
